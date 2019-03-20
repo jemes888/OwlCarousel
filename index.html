@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>jQuery UI</title>
+  </head>
+  <body>
+      
+        <div class="container">
+          <div class="row">
+            <div class="owl-carousel">
+                  <div> <img src="img/image_1.jpg" alt=""> </div>
+                  <div> <img src="img/image_2.jpg" alt=""> </div>
+                  <div> <img src="img/image_3.jpg" alt=""> </div>
+                  <div> <img src="img/image_4.jpg" alt=""> </div>
+                </div>
+          </div>
+        </div>
+                
+
+
+
+
+
+
+
+
+        <!-- jQuery  -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+        <script>
+          $(document).ready(function(){
+            var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:4,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+            $(".owl-carousel").owlCarousel();
+          });
+        </script>
+  </body>
+</html>

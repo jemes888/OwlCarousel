@@ -1,0 +1,69 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+h1{
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+h2{
+	text-align: center;
+	border-bottom: 1px solid red;
+}
+h3{
+	text-align: center;
+}
+ #draggable { 
+ 	width: 150px; 
+ 	height: 150px; 
+ 	padding: 0.5em; 
+ 	text-align: center;
+ 	border:1px solid black;
+ 	background-color: yellow;
+ }
+
+ /*===========================*/
+ .shortable{
+ 	text-align: center;
+ }
+   #sortable { list-style-type: none; margin: 0; padding: 0; width: 20%; }
+  #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 45px; }
+  #sortable li span { position: absolute; margin-left: -1.3em; }
+
+
+     .toggler { width: 500px; height: 200px; position: relative; }
+    #button { padding: .5em 1em; text-decoration: none; }
+    #effect { width: 240px; height: 170px; padding: 0.4em; position: relative; background: #fff; }
+    #effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+
+
+
+
+      #parent {
+    width: 60%;
+    height: 40px;
+    margin: 10px auto;
+    padding: 5px;
+    border: 1px solid #777;
+    background-color: #fbca93;
+    text-align: center;
+  }
+  .positionable {
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: 0;
+    background-color: #bcd5e6;
+    text-align: center;
+  }
+  #positionable1 {
+    width: 75px;
+    height: 75px;
+  }
+  #positionable2 {
+    width: 120px;
+    height: 40px;
+  }
+  select, input {
+    margin-left: 15px;
+  }
